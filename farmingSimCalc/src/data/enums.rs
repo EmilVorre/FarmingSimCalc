@@ -1,4 +1,8 @@
+use std::fmt;
+
+#[derive(Debug)]
 enum Crops {
+  Empty,
   Wheat,
   Barley,
   Canola,
@@ -25,6 +29,13 @@ enum Crops {
   Grass,
 }
 
+impl fmt::Display for Crops {
+  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+      write!(f, "{:?}", self)
+  }
+}
+
+#[derive(Debug)]
 enum Animals {
   Bees,
   Chickens,
@@ -36,9 +47,22 @@ enum Animals {
   WaterBuffalo,
 }
 
+#[derive(Debug)]
 enum Maps {
   RiverbendSprings,
   HutanPantai,
   Zielonka,
 }
 
+#[derive(Debug)]
+enum Products {
+  Flour,
+  Bread,
+
+}
+
+impl fmt::Display for Products {
+  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+      write!(f, "{:?}", self)
+  }
+}
