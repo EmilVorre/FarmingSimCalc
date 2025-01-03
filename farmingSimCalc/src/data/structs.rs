@@ -23,3 +23,10 @@ struct Crop {
     multi_harvest: bool,
     can_be_planted: Vec<Months>,
 }
+
+#[derive(Debug)]
+struct Product {
+    name: String,
+    price: f32,
+    month_to_sell: Vec<Months>,
+}
