@@ -17,7 +17,7 @@ enum Crops {
   SugarCane,
   Cotton,
   Sorghum,
-  Graps,
+  Grapes,
   Olives,
   Poplar,
   RedBeet,
