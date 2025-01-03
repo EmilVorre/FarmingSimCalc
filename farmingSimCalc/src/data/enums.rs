@@ -66,3 +66,25 @@ impl fmt::Display for Products {
       write!(f, "{:?}", self)
   }
 }
+
+#[derive(Debug)]
+enum Months {
+  January,
+  February,
+  March,
+  April,
+  May,
+  June,
+  July,
+  August,
+  September,
+  October,
+  November,
+  December,
+}
+
+impl fmt::Display for Months {
+  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+      write!(f, "{:?}", self)
+  }
+}

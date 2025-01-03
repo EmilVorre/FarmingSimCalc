@@ -21,4 +21,5 @@ struct Crop {
     time_to_harvest: f32,
     yield_per_ha: f32,
     multi_harvest: bool,
+    can_be_planted: Vec<Months>,
 }
