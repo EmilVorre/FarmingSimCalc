@@ -2,8 +2,9 @@ use std::collections::HashMap;
 
 #[derive(Debug)]
 struct Recipe {
-    inputs: HashMap<String, u32>,
+    inputs: Vec<HashMap<String, u32>>,
     outputs: HashMap<String, u32>,
+    cycles_per_month: u32,
     producer: String,
 }
 

@@ -59,7 +59,24 @@ enum Maps {
 #[derive(Debug)]
 enum Products {
   Flour,
+  FlourRice,
   Bread,
+  Sugar,
+  MilkBottled,
+  Eggs,
+  Butter,
+  Strawberries,
+  Cake,
+  RiceOil,
+  SunflowerOil,
+  CanolaOil,
+  OliveOil,
+  PotatoChips,
+  TripleSoup,
+  PotatoSoup,
+  CarrotSoup,
+  RedBeetSoup,
+  ParsnipSoup,
 
 }
 
@@ -96,6 +113,9 @@ enum Buildings {
   Bakery,
   Mill,
   Dairy,
+  OilMill,
+  PotatoPlant,
+  SoupFactory,
 }
 
 impl fmt::Display for Buildings {
