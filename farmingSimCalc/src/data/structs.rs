@@ -31,3 +31,10 @@ struct Product {
     price: f32,
     month_to_sell: Vec<Months>,
 }
+
+#[derive(Debug)]
+struct Building {
+    name: String,
+    max_capacity: HashMap<Crops, u32>,
+    current_capacity: HashMap<Crops, u32>,
+}
