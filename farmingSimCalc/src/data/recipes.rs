@@ -272,6 +272,7 @@ fn load_recipes() -> HashMap<String, Vec<Recipe>> {
             },
         ],
     );
+    
 
     return recipes;
 }

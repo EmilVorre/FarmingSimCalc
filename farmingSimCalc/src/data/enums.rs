@@ -112,7 +112,6 @@ impl fmt::Display for Months {
 enum Buildings {
   Bakery,
   Mill,
-  Dairy,
   OilMill,
   PotatoPlant,
   SoupFactory,

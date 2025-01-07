@@ -8,6 +8,7 @@ include!("../src/data/products.rs");
 include!("../src/utility/field.rs");
 include!("../src/utility/crop.rs");
 include!("../src/utility/general.rs");
+include!("../src/utility/ISAAC.rs");
 
 include!("../src/ui/app.rs");
 
@@ -15,13 +16,13 @@ fn main() {
 
     let recipes = load_recipes();
 
-    let mut fields = load_fields();
+    let fields = load_fields();
 
     let crops = load_crops();
 
     let products = load_products();
 
-    let mut owned_fields: HashMap<String, Field> = HashMap::new();
+    let owned_fields: HashMap<String, Field> = HashMap::new();
 
     /*
     move_field_to_owned_fields(&mut fields, &"Field 1".to_string(), &mut owned_fields);

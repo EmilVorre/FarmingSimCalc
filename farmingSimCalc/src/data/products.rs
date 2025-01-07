@@ -2,6 +2,7 @@
 
 fn load_products() -> HashMap<String, Product> {
     let mut products: HashMap<String, Product> = HashMap::new();
+    
     // Raw products
     products.insert(
         Crops::Wheat.to_string(),
